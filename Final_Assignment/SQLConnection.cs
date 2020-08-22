@@ -13,7 +13,7 @@ namespace Final_Assignment
 
         public SQLConnection()
         {
-            connectionString = "Data Source=DESKTOP-DOPM7V3;Initial Catalog=Final_Assignment;Integrated Security = true";
+            connectionString = "Data Source=ICEKIMOZRTX;Initial Catalog=Final_Assignment;Integrated Security = true";
         }
 
         public SQLConnection(string connectionString)
