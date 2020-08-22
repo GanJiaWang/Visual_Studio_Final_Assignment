@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Final_Assignment.Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Final_Assignment.Register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -209,40 +209,42 @@
 			<div class="breadcrumbs-main">
 				<ol class="breadcrumb">
 					<li><a href="index.html">Home</a></li>
-					<li class="active">Account</li>
+					<li class="active">Register</li>
 				</ol>
 			</div>
 		</div>
 	</div>
 	<!--end-breadcrumbs-->
-	<!--account-starts-->
-	<div class="account">
+	<!--register-starts-->
+	<div class="register">
 		<div class="container">
-		<div class="account-top heading">
-				<h2>ACCOUNT</h2>
+			<div class="register-top heading">
+				<h2>REGISTER</h2>
 			</div>
-			<div class="account-main">
+			<div class="register-main">
 				<div class="col-md-6 account-left">
-					<h3>Existing User</h3>
-					<div class="account-bottom">
-						<input placeholder="Email" type="text" tabindex="3" required>
-						<input placeholder="Password" type="password" tabindex="4" required>
-						<div class="address">
-							<a class="forgot" href="#">Forgot Your Password?</a>
-							<input type="submit" value="Login">
-						</div>
-					</div>
+					<input placeholder="First name" type="text" tabindex="1" required>
+						<input placeholder="Last name" type="text" tabindex="2" required>
+						<input placeholder="Email address" type="text" tabindex="3" required>
+						<input placeholder="Mobile" type="text" tabindex="3" required>
+						<ul>
+							<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>Male</label></li>
+							<li><label class="radio"><input type="radio" name="radio"><i></i>Female</label></li>
+							<div class="clearfix"></div>
+						</ul>
 				</div>
-				<div class="col-md-6 account-right account-left">
-					<h3>New User? Create an Account</h3>
-					<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
-					<a href="register.html">Create an Account</a>
+				<div class="col-md-6 account-left">
+					<input placeholder="Password" type="password" tabindex="4" required>
+						<input placeholder="Retype password" type="password" tabindex="4" required>
 				</div>
 				<div class="clearfix"></div>
 			</div>
+			<div class="address submit">
+							<input type="submit" value="Submit">
+						</div>
 		</div>
 	</div>
-	<!--account-end-->
+	<!--register-end-->
 	<!--information-starts-->
 	<div class="information">
 		<div class="container">
