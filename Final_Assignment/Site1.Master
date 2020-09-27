@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>Luxury Watches A Ecommerce Category Flat Bootstarp Resposive Website Template | Account :: w3layouts</title>
+    <title>Luxury Watches</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery-1.11.0.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -78,7 +78,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="grid"><a href="Product.aspx">Product</a></li>
 						<li class=""><a href="AboutUs.aspx">About Us</a></li>
 						<li class="grid"><a href="Contact.aspx">Contact</a></li>
-						<li class="grid"><a href="contact.html">History</a></li>
+						<% if (Session["userE"] != null)
+                            {
+						%>
+						<li class="grid"><a href="History.aspx">History</a></li>
+						<li class="grid"><a href="Profile.aspx">Profile</a></li>
+						<% } %>
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -102,18 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--bottom-header-->
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <!--footer-starts-->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-top">
-				<div class="col-12">					
-					<p class="text-center">© 2015 Luxury Watches. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!--footer-end-->	
         </div>
     </form>
 </body>

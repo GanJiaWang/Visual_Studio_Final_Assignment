@@ -22,7 +22,7 @@
         <div class="container">
         <div class="row">
             <div class="col-7">
-                <h1>Top-Up Payment</h1>
+                <h1>Payment</h1>
                 <p>powered by Time Zone</p>
             </div>
         </div>
@@ -45,13 +45,13 @@
         <br>
         <div class="row text-center">
             <div class="col-12">
-                <h6>First Name</h6>
+                <h6>Full Name</h6>
             </div>
         </div>
 
         <div class="row text-center">
             <div class="col-12">
-                <input type="text" required />
+                <asp:TextBox ID="TextBox1" runat="server" required></asp:TextBox>
             </div>
         </div>
         <br>
@@ -62,7 +62,18 @@
         </div>
         <div class="row text-center">
             <div class="col-12">
-                <input type="text" required />
+                <input type="month" required />
+            </div>
+        </div>
+            <br>
+            <div class="row text-center">
+            <div class="col-12">
+                <h6>CSC</h6>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <input type="number" required />
             </div>
         </div>
         <br>
@@ -72,7 +83,7 @@
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 </div>
                 <div class="col text-center mt-3">
-                    <asp:Button ID="Payment" runat="server" Text="Submit" class="btn btn-danger w-25" />
+                    <asp:Button ID="PaymentSuccess" runat="server" Text="Submit" OnClick="Payment_Click" class="btn btn-danger w-25" />
                 </div>
             </div>
     </div>

@@ -30,7 +30,7 @@ namespace Final_Assignment
                 {
                     string product_id = e.CommandArgument.ToString();
                     int quantity = 1;
-                    DataTable dt = dbcon.getDataSQL("select * from carts where user_id = '" + Session["user_id"] + "' and product_id= '" + product_id + "';");
+                    DataTable dt = dbcon.getDataSQL("select * from carts where user_id = '" + Session["user_id"] + "' and product_id= '" + product_id + "' and status=0;");
 
                     if (dt.Rows.Count > 0)
                     {

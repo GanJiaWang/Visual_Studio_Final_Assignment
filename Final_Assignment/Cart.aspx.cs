@@ -20,7 +20,7 @@ namespace Final_Assignment
             dbcon = new SQLConnection();
             if (!this.IsPostBack)
             {
-                DataTable dt = dbcon.getDataSQL("select *, c.quantity * p.price as totalPrice from carts as c inner join products as p on c.product_id = p.id where user_id='" + Session["user_id"] + "';");
+                DataTable dt = dbcon.getDataSQL("select *, c.quantity * p.price as totalPrice from carts as c inner join products as p on c.product_id = p.id where user_id='" + Session["user_id"] + "'and status=0;");
                 Label1.Text = dt.Rows.Count.ToString();
                 Repeater1.DataSource = dt;
                 Repeater1.DataBind();

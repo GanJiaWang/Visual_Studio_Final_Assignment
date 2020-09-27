@@ -16,7 +16,8 @@
                         <asp:TextBox ID="passwordTxt" runat="server" type="password" placeholder="Password"></asp:TextBox>
 						<div class="address" style="margin-top: 20px;">
 						<asp:LinkButton><asp:Button ID="Button2" runat="server" Text="Login" OnClick="Button2_Click" /></asp:LinkButton><br /><br />
-						<a style="margin: 0px;" href="Register.aspx">Register</a>
+						<a style="margin: 0px;" href="Register.aspx">Register</a><br /><br />
+							<a style="margin: 0px;" href="AdminLogin.aspx">Admin Login</a>
 						</div>
 					</div>
 				</div>

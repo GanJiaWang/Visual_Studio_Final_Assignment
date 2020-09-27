@@ -39,7 +39,7 @@ namespace Final_Assignment
                 {
                     try
                     {
-                        string query = "insert into users(name, email, password, address, phone, created_at) values ('" + fullNameTxt.Text + "','" + EmailTxt.Text + "','" + PasswordTxt.Text + "','" + Address.InnerText + "','" + Phone.Text + "','" + DateTime.Now.ToString("dd/MM/yyyy hh:mm tt") + "');";
+                        string query = "insert into users(name, email, password, address, phone, dateTime) values ('" + fullNameTxt.Text + "','" + EmailTxt.Text + "','" + PasswordTxt.Text + "','" + Address.InnerText + "','" + Phone.Text + "','" + DateTime.Now.ToString("dd/MM/yyyy hh:mm tt") + "');";
                         dbcon.executeSQL(query);
                         Session["userE"] = EmailTxt.Text;
                         Response.Write("<script>alert('Register Successfully.');window.location = 'Home.aspx';</script>");
