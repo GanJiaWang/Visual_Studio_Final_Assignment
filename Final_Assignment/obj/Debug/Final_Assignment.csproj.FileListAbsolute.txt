@@ -57,3 +57,7 @@ D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\obj\Debug\Final_
 D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.csproj.CopyComplete
 D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.dll
 D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\obj\Debug\Final_Assignment.pdb
+D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\bin\Microsoft.Configuration.ConfigurationBuilders.Base.dll
+D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll
+D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\bin\Microsoft.Configuration.ConfigurationBuilders.Base.xml
+D:\GitHub Clone\Visual_Studio_Final_Assignment\Final_Assignment\bin\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.xml
