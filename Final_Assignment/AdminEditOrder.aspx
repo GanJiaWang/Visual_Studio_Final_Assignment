@@ -9,7 +9,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Manage Sales Order</h4
-                                <div class="mb-3"><asp:Button ID="status" class="btn btn-success float-right" runat="server" Text="In Transit" OnClick="Button2_Click"/></div>
+                                <div class="mb-3"><asp:Button ID="status" class="btn btn-danger float-right" runat="server" Text="Refund Order" OnClick="Button2_Click"/></div>
                                 <div class="table-responsive">
                                     <table class="table">
                                         <thead>

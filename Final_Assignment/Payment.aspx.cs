@@ -14,12 +14,18 @@ namespace Final_Assignment
         protected void Page_Load(object sender, EventArgs e)
         {
             dbcon = new SQLConnection();
+            if (Session["userE"] == null)
+            {
+                Response.Write("<script>window.location = 'Login.aspx';</script>");
+            }
+            else
+            {
             Label1.Text = "$" + Session["totalPayment"].ToString();
+            }
         }
 
         protected void Payment_Click(object sender, EventArgs e)
         {
-            string name = TextBox1.Text;
             DataTable dt = dbcon.getDataSQL("select * from carts where user_id = '" + Session["user_id"] + "'and status=0;");
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -28,7 +34,8 @@ namespace Final_Assignment
             }
             Session["productCount"] = null;
             Session["totalPayment"] = null;
-            Response.Write("<script>alert('Thank you " + name + ", Payment Successfully.');window.location = 'Home.aspx';</script>");
+            DataTable dt1 = dbcon.getDataSQL("select * from users where ID = '" + Session["user_id"] + "';");
+            Response.Write("<script>alert('Thank you " + dt1.Rows[0]["name"].ToString() + ", Payment Successfully.');window.location = 'Home.aspx';</script>");
         }
     }
 }

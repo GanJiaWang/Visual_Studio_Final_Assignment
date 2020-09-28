@@ -18,13 +18,6 @@ namespace Final_Assignment
             {
                 Response.Write("<script>window.location = 'AdminLogin.aspx';</script>");
             }
-            //DataTable dt = dbcon.getDataSQL("select * from users where email = '" + Session["userE"] + "';");
-            //if (dt.Rows.Count > 0)
-            //{
-            //    Session["user_id"] = dt.Rows[0]["id"];
-            //}
-            //Repeater1.DataSource = dt;
-            //Repeater1.DataBind();
         }
     }
 }
