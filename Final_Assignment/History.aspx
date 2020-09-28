@@ -6,11 +6,11 @@
 	<div class="ckeckout">
 		<div class="container">
 			<div class="ckeck-top heading">
-				<h2>CHECKOUT</h2>
+				<h2>HISTORY</h2>
 			</div>
 			<div class="ckeckout-top">
 			<div class="cart-items">
-			 <h3>My Shopping Bag (<asp:Label ID="Label1" runat="server" Text="Label" />)</h3>
+			 <h3>My History Bag (<asp:Label ID="Label1" runat="server" Text="Label" />)</h3>
 			<div class="in-check" >
 				<ul class="unit">
 					<li><span>Item</span></li>
